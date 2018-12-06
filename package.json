@@ -1,0 +1,36 @@
+{
+  "name": "kuada_nathalia_portfolio",
+  "version": "1.0.0",
+  "description": "Hosted Portfolio Website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathimiki/Kuada_Nathalia_Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "interactive",
+    "design",
+    "website"
+  ],
+  "author": "Nathalia Miki Kuada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathimiki/Kuada_Nathalia_Portfolio/issues"
+  },
+  "homepage": "https://github.com/nathimiki/Kuada_Nathalia_Portfolio#readme",
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-burger-menu": "^1.0.9",
+    "vue-quick-menu": "^1.0.7",
+    "vue-radial-menu": "^1.0.3"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.10.0"
+  }
+}
