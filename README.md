@@ -1,8 +1,16 @@
-# Kuada_Nathalia_Portfolio
+Project Title
+Hosted Portfolio Website (Integrated Final Project) 
 
-Project: Hosted Portfolio Website (Integrated Final Project) <br>
+Prerequisites
+Install Node.js
 
-Author: Nathalia Miki Kuada <br>
+Built With
+Visual Studio Code
+Gulp
+
+Author
+Nathalia Miki Kuada
+
 
 
 
