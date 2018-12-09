@@ -1,14 +1,14 @@
-Project Title <br>
+Project Title: <br>
 Hosted Portfolio Website (Integrated Final Project)<br>
 
-Prerequisites<br>
+Prerequisites:<br>
 Install Node.js<br>
 
-Built With<br>
+Built With:<br>
 Visual Studio Code<br>
 Gulp<br>
 
-Author<br>
+Author:<br>
 Nathalia Miki Kuada<br>
 
 
