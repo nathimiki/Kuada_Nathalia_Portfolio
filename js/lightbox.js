@@ -10,8 +10,9 @@
     function showLightbox(src) {
         body.classList.add('js-lightbox-active');
         lightboxContent.innerHTML = `<img src="${src}"/>`;
-
     }
+
+    
 
     function exitLightbox() {
         body.classList.remove('js-lightbox-active');
