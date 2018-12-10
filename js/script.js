@@ -26,9 +26,6 @@
         body.classList.toggle('menu-is-open');
     });
 
-
-
-// Show or hide the Back to Top Button
     window.addEventListener('scroll', function () {
         let offset    = 500,
             scrollpos = window.scrollY;
@@ -38,17 +35,6 @@
         } else {
             btButton.classList.remove('visible');
         }
-    });
-
-//Smoothscroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
     });
 
     animatedObject.forEach(el => {

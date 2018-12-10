@@ -1,3 +1,31 @@
+<?php
+	//var_dump($_GET);
+
+	$fields = array(
+	'first-name'=>array(
+		'type'=>'text',
+		'label'=>'First Name'
+        ),
+    'last-name'=>array(
+        'type'=>'text',
+        'label'=>'Last Name'
+        ),
+	'email'=>array(
+		'type'=>'email',
+		'label'=>'Email'
+		),
+	'subject'=>array(
+		'type'=>'text',
+		'label'=>'Subject'
+		),
+	'message'=>array(
+		'type'=>'textarea',
+		'label'=>'Message'
+		),
+	);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,65 +60,49 @@
         </nav>
     </header>
 
+<section class="row" id="formTitle">
+	<div class="small-10 small-offset-1 medium-10 medium-offset-1 large-6 large-offset-2 columns" id="formT">
+		<h1>Let's get in touch</h1>
+	</div>
+</section>
 
+<section class="row" id ="formContainer">
 
-    <section class="hero-section_fuel">
-    <div class="small-12 medium-12 large-12 columns"> 
-    <div id="title_project" class="hero-section-tex">
-        <h1>Fuel Energy</h1>
-        <p>Branding | identity</p>
-    </div>
-    </div>
-    </section>
+	<div class="small-10 small-offset-1 medium-10 medium-offset-1 large-8 large-offset-2 columns" id="contactForm">
 
+    <?php if(isset($_GET['status']) && $_GET['status']==='error'):?>
+	<div class="alert alert-danger" role="alert">The form is missing some required fields!</div>
+	<?php endif;?>
 
+	<?php if(isset($_GET['status']) && $_GET['status']==='successful'):?>
+	<div class="alert alert-success" role="alert">The form submitted succesfully!</div>
+	<?php endif;?>
 
-    <section class="row projectPage">
-    <div class="marginProject">
-    <div class="small-12 medium-12 large-6 columns js-animation projectBox">
-    <h1>The Project</h1>
-    <h2>College Assignment: Design and Image & Motion Design</h2>
-    <p class="js-animation">For this project, we were required to research, create a logo design, label design, texture and 3D mock-ups for the launch of this new energy drink. We had 5 brand names, with a defined price which should be taken in consideration for the design creation. My chosen brand was Fuel, $2 per can (Standard Energy Drink).</p>    
-    </div>
-    <div class="small-12 medium-12 large-6 columns js-animation projectBox">
-    <img src="images/fuel_cap.jpg" alt="project_img" class="project_img">
-    </div>
-    </div>
-    </section>
+        <form action="/includes/sendEmail.php" method="POST">
+        <?php foreach($fields as $field_name => $field_config):?>
+            <?php if($field_config['type'] === 'textarea'):?>
+                <label for="<?php echo $field_name;?>"><?php echo $field_config['label'];?></label>
+                <textarea id="<?php echo $field_name;?>" placeholder="<?php echo $field_name;?>" name="<?php echo $field_name;?>"></textarea><br>
+            <?php else:?>
+                <label for="<?php echo $field_name;?>"><?php echo $field_config['label'];?></label>
+                <input id="<?php echo $field_name;?>" placeholder="<?php echo $field_name;?>" type="<?php echo $field_config['type'];?>" name="<?php echo $field_name;?>"><br>
+            <?php endif;?>
+        <?php endforeach;?>
+            <button type="submit" id="contactButton"><span>Submit</span></button>
+        </form> 
 
-    <section class="row projectPage">
-    <div class="marginProject">
-    <div class="hide-for-small-only medium-12 large-6 columns js-animation projectBox">
-    <img src="images/fuel_3_2.jpg" alt="fuel_3_full" class="last_img">
-    </div>
-    <div class="small-12 medium-12 large-6 columns js-animation projectBox">
-    <h1>The Result</h1>
-    <p class="js-animation projectBox last_p">To archive the final result was necessary a long research to gain inspiration, and several drafts of logo and label design. The fire element of the logo and the red, orange, yellow gradient was to evoke a energetic and powerfull feeling to the brand. In order to balance that, I decided to give a dark background to the label and chose vibrant colors to distinguish the 3 flavors.</p>    
-    </div>
-    <div class="show-for-small-only js-animation projectBox">
-    <img src="images/fuel_3_2.jpg" alt="fuel_3_full" id="small_last_img">
-    </div>
-    </div>    
-    </section>
+	</div>
 
-    <section class="row projectPage">
-            <div class="marginProject">
-            <div class="small-6 medium-6 large-6 columns">
-            <a href="hk.html"><button id="projectButtonBack"><span>Back</span></button></a>    
-            </div>
-            </div>    
-    </section> 
+</section>
 
-    <section class="row getInTouchBox">
+<section class="row getInTouchBox">
     <div class="small-12 medium-12 large-12 columns js-animation">
         <h1>Let’s break the limits of creativite and build something beautiful and breath taking!</h1>
-        <a href="contact.php"><button id="touchButton"><span>Let's talk</span></button></a>
-        <a href="index.html"><img src="images/logo.png" alt="logo" id="logoFooter"></a>
-        
+        <a href="index.html"><img src="images/logo.png" alt="logo" id="logoFooter"></a>       
     </div>
-    </section>
+</section>
 
-    <footer>
+<footer>
     <section class="row getInTouchBox">
     <div class="small-12 medium-12 large-12 columns footer">
         <div id="line"></div>
@@ -107,7 +119,6 @@
     </footer>
 
     <script src="js/wow.min.js"></script>
-    <script>new WOW().init();</script>
     <script src="js/three.r92.min.js"></script>
     <script src="js/vanta.net.min.js"></script>
     <script src="js/vendor/jquery.js"></script>
