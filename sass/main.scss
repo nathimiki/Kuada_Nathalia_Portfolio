@@ -557,7 +557,7 @@ h1{
         width: 50px;
         height: auto;
         margin-top: 10%;
-        margin-bottom: 10%;}
+        margin-bottom: 25%;}
 }
 
 //footer
@@ -795,7 +795,7 @@ body.js-lightbox-active {
 .hero-section_galaxy h1{
     font-family: $font-title;
     font-size: $font-title-size;
-    color: white;
+    color: $white;
 }
 
 
@@ -821,7 +821,7 @@ body.js-lightbox-active {
 .hero-section_beer h1{
     font-family: $font-title;
     font-size: $font-title-size;
-    color: white;
+    color: $white;
 }
 
 
@@ -847,7 +847,7 @@ body.js-lightbox-active {
 .hero-section_fuel h1{
     font-family: $font-title;
     font-size: $font-title-size;
-    color: white;
+    color: $white;
 }
 
 
@@ -873,7 +873,7 @@ body.js-lightbox-active {
 .hero-section_hk h1{
     font-family: $font-title;
     font-size: $font-title-size;
-    color: white;
+    color: $white;
 }
 
 
@@ -899,7 +899,7 @@ body.js-lightbox-active {
 .hero-section_dot h1{
     font-family: $font-title;
     font-size: $font-title-size;
-    color: white;
+    color: $white;
 }
 
 
@@ -908,7 +908,7 @@ body.js-lightbox-active {
 #title_project p{
     font-family: $font-subtitle;
     font-size: $font-subtitle-size;
-    color: white;
+    color: $white;
 }
 
 .projectBox {
@@ -944,7 +944,7 @@ body.js-lightbox-active {
 }
 
 .last_img {
-    margin-bottom: 15%;
+    margin-bottom: 8%;
 }
 
 .projectPage h2{
@@ -969,5 +969,220 @@ body.js-lightbox-active {
             margin-bottom: 0%;}
 
     #small_last_img{
-            margin-bottom: 20%;}
+            margin-bottom: 12%;}
+}
+
+
+#projectButton {
+    width: 100px;
+    height: 30px;
+    background: $orange;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $font-button;
+    font-size: $font-button-size;
+    cursor: pointer;
+    margin-bottom: 10%;
+    font-weight: 600;
+}
+
+#projectButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+#projectButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: -1px;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+#projectButton:hover span {
+    padding-right: 15px;
+}
+  
+#projectButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#projectButtonBack {
+    width: 100px;
+    height: 30px;
+    background: $orange;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $font-button;
+    font-size: $font-button-size;
+    cursor: pointer;
+    margin-bottom: 10%;
+    font-weight: 600;
+}
+
+#projectButtonBack span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+#projectButtonBack span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: -1px;
+    left: -20px;
+    transition: 0.5s;
+}
+  
+#projectButtonBack:hover span {
+    padding-left: 15px;
+}
+  
+#projectButtonBack:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+@media screen and (max-width: 900px){
+    #projectButton {
+        margin-bottom: 25%;
+    }
+    #projectButtonBack {
+        margin-bottom: 25%;
+    }
+}
+
+
+//top
+
+
+.back-top {
+display: none;
+position: fixed;
+right: 0;
+bottom: 0;
+opacity: 0;
+z-index: 600;
+cursor: pointer; }
+.back-top a {
+-webkit-transition: 0.3s ease-in-out;
+transition: 0.3s ease-in-out;
+background: $light-blue;
+width: 3rem;
+height: 3rem;
+border-radius: 5px 0px 0px 0px;
+text-align: center;
+text-transform: uppercase;
+text-decoration: none;
+line-height: 3.5rem;
+color: $dark-blue; }
+@media screen and (min-width: 600px) {
+.back-top a {
+  display: block; } }
+.back-top a:hover .icon {
+color: $orange; }
+.back-top a .icon {
+line-height: inherit;
+font-size: 1.2rem;}
+@media screen and (min-width: 600px) {
+.back-top.visible {
+display: block;
+-webkit-animation: fadeIn 0.3s ease-in-out 1 forwards;
+animation: fadeIn 0.3s ease-in-out 1 forwards; } }
+
+@media screen and (max-width: 600px) {
+    .back-top a {
+      display: block; } }
+    .back-top a:hover .icon {
+    color: $orange; }
+    .back-top a .icon {
+    line-height: inherit;
+    font-size: 1.2rem;}
+    @media screen and (max-width: 600px) {
+    .back-top.visible {
+    display: block;
+    -webkit-animation: fadeIn 0.3s ease-in-out 1 forwards;
+    animation: fadeIn 0.3s ease-in-out 1 forwards; } }
+
+
+//form
+
+#contact {
+    padding-top: 10%;
+}  
+        
+#formT{
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+        
+#formTitle {
+    background-color: $light-blue;
+}
+        
+#formTitle h1{
+    font-size: $font-skills-size;
+    font-family: $font-skills;
+}
+        
+#formContainer {
+    background-color: $light-blue;
+}
+        
+#contactButton {
+    width: 100px;
+    height: 30px;
+    background: $orange;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $font-button;
+    font-size: $font-button-size;
+    cursor: pointer;
+    margin-bottom: 6%;
+    font-weight: 600;
+}
+            
+#contactButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+            
+#contactButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: -1px;
+    right: -20px;
+    transition: 0.5s;
+}
+            
+#contactButton:hover span {
+    padding-right: 15px;
+}
+            
+#contactButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+        
+        
+@media screen and (max-width: 900px){
+    #formT{
+        margin-top: 25%;
+        margin-bottom: 2%;
+    }
+    #contactButton {
+        margin-bottom: 20%;
+    }
 }

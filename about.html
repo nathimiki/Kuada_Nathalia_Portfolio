@@ -23,8 +23,8 @@
                 <ul class="header-nav-items">
                     <li><a class="menu-text" href="index.html">home</a></li>
                     <li><a class="menu-text" href="about.html">about</a></li>
-                    <li><a class="menu-text" href="/index.html#portfolio">portfolio</a></li>
-                    <li><a class="menu-text" href="contact.html">contact</a></li>
+                    <li><a class="menu-text" href="index.html#portfolio">work</a></li>
+                    <li><a class="menu-text" href="contact.php">contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -97,7 +97,7 @@
     <section class="row getInTouchBox">
             <div class="small-12 medium-12 large-12 columns js-animation">
                 <h1>Let’s break the limits of creativite and build something beautiful and breath taking!</h1>
-                <button id="touchButton"><span>Let's talk</span></button>
+                <a href="contact.php"><button id="touchButton"><span>Let's talk</span></button></a>
                 <a href="index.html"><img src="images/logo.png" alt="logo" id="logoFooter"></a>
                 
             </div>
@@ -109,16 +109,29 @@
     <div class="small-12 medium-12 large-12 columns footer">
         <div id="line"></div>
         <div class="logos">
-        <a href="#"><img src="images/face.png" alt="face" class="social"></a>
-        <a href="#"><img src="images/git.png" alt="git" class="social"></a>
-        <a href="#"><img src="images/insta.png" alt="insta" class="social"></a>
+            <a href="https://www.facebook.com/nathi.miki"><img src="images/face.png" alt="face" class="social"></a>
+            <a href="https://github.com/nathimiki"><img src="images/git.png" alt="git" class="social"></a>
+            <a href="https://www.instagram.com/nathimiki/"><img src="images/insta.png" alt="insta" class="social"></a>
+        </div>
+        <div class="back-top">
+            <a class="smoothscroll" aria-label="Back to Top" href="#top"><span class="icon">top</span></a>
         </div>
     </div>
     </section>
     </footer>
 
     <script src="js/wow.min.js"></script>
-    <script src="js/myWow.min.js"></script>
+    <script>wow = new WOW(
+            {
+            boxClass:     'wow',      
+            animateClass: 'animated', 
+            offset:       0,          
+            mobile:       true,       
+            live:         true        
+          }
+          )
+          wow.init();
+    </script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
