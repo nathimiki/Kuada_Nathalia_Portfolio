@@ -773,6 +773,111 @@ body.js-lightbox-active {
 }
 
 
+//thanks2one
+
+.hero-section_thanks2one{
+    background: url(../images/thanks2one_background.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+
+
+//ont
+
+.hero-section_ont{
+    background: url(../images/ont_background.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+
+
+//flashback
+
+.hero-section_flashback{
+    background: url(../images/flashback_background.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+
+
+//car
+
+.hero-section_car{
+    background: url(../images/car_background.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+
+
+//aquapomus
+
+.hero-section_aquapomus{
+    background: url(../images/aquapomus_background.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.hero-section_aquapomus h1{
+    font-family: $font-title;
+    font-size: $font-title-size;
+    color: $white;
+}
+
+
 
 //galaxy
 
@@ -916,6 +1021,18 @@ body.js-lightbox-active {
     margin-top: 5%;  
  }
 
+ .projectBoxCar {
+    text-align: center;
+    margin-top: 2%;  
+ }
+
+ .projectBoxAqua {
+    text-align: center;
+    margin-top: 0%; 
+    padding-left: 4%; 
+    padding-right: 4%; 
+ }
+
  .marginProject{
      margin: 2%;
 }
@@ -945,6 +1062,10 @@ body.js-lightbox-active {
 
 .last_img {
     margin-bottom: 8%;
+}
+
+.project_img_thanks2one {
+    margin-top: 15%;
 }
 
 .projectPage h2{
