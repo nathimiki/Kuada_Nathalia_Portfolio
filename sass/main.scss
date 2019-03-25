@@ -1033,6 +1033,18 @@ body.js-lightbox-active {
     padding-right: 4%; 
  }
 
+ .projectBoxThks {
+    text-align: center;
+    margin-top: 0%; 
+    padding-left: 4%; 
+    padding-right: 4%; 
+ }
+
+ .projectBoxThksLogo {
+    text-align: center;
+    margin-top: 0%;  
+ }
+
  .marginProject{
      margin: 2%;
 }
@@ -1051,6 +1063,10 @@ body.js-lightbox-active {
     margin-bottom: 1%;
 }
 
+.projectBoxThks h1{
+    margin-top: 2%;
+}
+
 .projectPage p{
     font-family: $font-project-text;
     font-size: $font-project-text-size;
@@ -1065,7 +1081,7 @@ body.js-lightbox-active {
 }
 
 .project_img_thanks2one {
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .projectPage h2{
@@ -1087,7 +1103,7 @@ body.js-lightbox-active {
     
     .projectPage img{
             margin-top: 5%;
-            margin-bottom: 0%;}
+            margin-bottom: 2%;}
 
     #small_last_img{
             margin-bottom: 12%;}
